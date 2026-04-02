@@ -8,7 +8,7 @@ import (
 	"gorm.io/gorm"
 )
 
-type GzgIDRepository interface {
+type GZGIDRepository interface {
 	Create(ctx context.Context, user *model.User) (*model.User, error)
 	FindByID(ctx context.Context, id uuid.UUID) (*model.User, error)
 	UpdateByID(ctx context.Context, id uuid.UUID, user *model.User) (*model.User, error)
